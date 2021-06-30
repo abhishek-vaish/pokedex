@@ -1,0 +1,39 @@
+.nav{
+    box-shadow: 4px -8px 17px black;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.nav .nav__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.nav .nav__menu .menu__logo img{
+    width: 2.5em;
+}
+
+.nav .nav__menu .menu__search .search__box{
+    border: 0.09375em solid black;
+    border-radius: 1.25em;
+    padding: 0.375em 1.25em;
+    display: flex;
+    width: 10.375em;
+}
+
+.nav .nav__menu .menu__search .search__box input{
+    border: 0;
+}
+
+
+.nav .nav__menu .menu__search .search__box input:focus{
+    outline: none;
+}
+
+.nav .nav__menu .menu__search .search__box img{
+    width: 19px;
+    height: auto;
+}
