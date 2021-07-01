@@ -5,7 +5,7 @@ const Card = (props) => {
   return (
     <div key={props.key} className={`card ${props.type}`}>
       <div className="card__content">
-        <h3>{props.id}</h3>
+        <h3>#{props.id}</h3>
         <p className="name">{props.name}</p>
         <img src={props.image} alt={props.name} />
         <div className="card__details">
