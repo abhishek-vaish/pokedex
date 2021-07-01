@@ -1,0 +1,153 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card__body {
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px 200px;
+  width: 100%;
+}
+
+.card {
+  background-color: rgb(255, 207, 207);
+  width: 150px;
+  height: fit-content;
+  padding: 20px;
+  margin: 10px 30px;
+  border-radius: 5px;
+}
+
+.card .card__content h3 {
+  font-size: 48px;
+  line-height: 0;
+  margin: 20px 0px;
+}
+
+.card .card__content .name {
+  font-size: 28px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.card .card__content img {
+  width: 100px;
+}
+
+.rock {
+  background-color: rgb(218, 127, 127);
+}
+.ghost {
+  background-color: rgb(247, 247, 247);
+}
+.electric {
+  background-color: rgb(255, 255, 161);
+}
+.bug {
+  background-color: #f6d6a7;
+}
+.poison {
+  background-color: #e0a7f6;
+}
+.normal {
+  background-color: #f4f4f4;
+}
+.fairy {
+  background-color: rgba(255, 192, 203, 0.863);
+}
+.fire {
+  background-color: #fbe3df;
+}
+.grass {
+  background-color: #e2f9e1;
+}
+.water {
+  background-color: #e0f1fd;
+}
+
+.type {
+  font-size: 18px;
+}
+
+.load__button {
+  width: 150px;
+  margin: 20px 0px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.description {
+  height: 100vh;
+}
+
+.pokemon__content {
+  display: flex;
+  padding-top: 80px;
+}
+
+th {
+  font-weight: 600;
+  font-size: 13px;
+  text-align: left;
+}
+
+tr {
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .card__body {
+    grid-template-columns: 180px 180px;
+  }
+
+  .card {
+    width: 130px;
+    padding: 10px;
+    margin: 10px 15px;
+  }
+
+  .card .card__content h3 {
+    font-size: 34px;
+  }
+
+  .card .card__content .name {
+    font-size: 22px;
+  }
+
+  .card .card__content img {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .card__body {
+    grid-template-columns: 180px 180px 180px 180px;
+  }
+
+  .card {
+    width: 130px;
+    padding: 10px;
+    margin: 10px 30px;
+  }
+
+  .card .card__content h3 {
+    font-size: 34px;
+  }
+
+  .card .card__content .name {
+    font-size: 22px;
+  }
+
+  .card .card__content img {
+    width: 80px;
+  }
+}
